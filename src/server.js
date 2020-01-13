@@ -1,7 +1,7 @@
 process.title = 'Pretendo - eShop';
 
 const express = require('express');
-const subdomain = require('express-subdomain');
+//const subdomain = require('express-subdomain');
 const hbs = require( 'express-handlebars');
 const morgan = require('morgan');
 const logger = require('./logger');
@@ -42,34 +42,10 @@ app.use(express.urlencoded({
 	extended: true
 }));
 
-// Create subdomains
-logger.info('[WUP] Creating \'eshop\' subdomain');
-app.use(subdomain('eshop', ROUTERS.WUP));
-
 // Setup routes
 logger.info('[WUP] Applying imported routes');
-ROUTERS.WUP.use('/', ROUTES.WUP.main);
+app.use('/', ROUTES.WUP.main);
 
-// 404 handler
-logger.info('Creating 404 status handler');
-app.use((request, response) => {
-	response.status(404);
-	response.send();
-});
-
-// non-404 error handler
-logger.info('Creating non-404 status handler');
-app.use((error, request, response) => {
-	const status = error.status || 500;
-
-	response.status(status);
-
-	response.json({
-		app: 'api',
-		status,
-		error: error.message
-	});
-});
 
 // Starts the server
 logger.info('Starting server');

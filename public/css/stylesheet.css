@@ -1,0 +1,136 @@
+html {
+    background-color: lightgray;
+}
+/* The sidebar menu */
+.sidenav {
+  height: 90%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: center; /* Stay at the top */
+  left: 10;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-radius: 15px;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.sidebar-title {
+    text-align: center;
+    color: gainsboro;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 15px 8px 15px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.featured {
+    background-color: darkblue;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.featured_title {
+    margin-left: 2%;
+    color: gainsboro;
+}
+
+.featured_game {
+    float: left;
+  width: 32%;
+  padding: 5px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+
+.newapps {
+    background-color: indianred;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.newapps_title {
+    margin-left: 2%;
+    color: gainsboro;
+}
+
+.newapp_css {
+    float: left;
+  width: 32%;
+  padding: 5px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+
+.container {
+    float: left;
+  width: 15%;
+  padding: 50px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+
+.general_apps {
+    background-color: gray;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.sapp_css {
+    display: block;
+    margin: 0 auto;
+}
+
+.sapp_text {
+    color: gainsboro;
+    text-align: center;
+}
+
+.more {
+    float: right;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
+.more_text {
+    display: inline;
+    
+}
+
+.arrow {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+.grove_logo {
+    border-radius: 10px;
+    float: left;
+}
